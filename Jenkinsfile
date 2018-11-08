@@ -20,7 +20,7 @@ pip install -r requirements.txt'''
 . repo/bin/activate
 #Run pytest and export coverage report
 pytest --cov-report xml --cov-report term --cov ./lib/'''
-        cobertura(coberturaReportFile: 'Coverage.xml', failNoReports: true, failUnstable: true, failUnhealthy: true, lineCoverageTargets: '90,50,80')
+        cobertura(coberturaReportFile: 'coverage.xml', failNoReports: true, failUnstable: true, failUnhealthy: true, lineCoverageTargets: '90,50,80')
       }
     }
   }
